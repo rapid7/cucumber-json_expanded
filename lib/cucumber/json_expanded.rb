@@ -1,7 +1,7 @@
 require "cucumber/json_expanded/version"
 
 module Cucumber
-  module JsonExpanded
+  module JSONExpanded
     # Your code goes here...
   end
 end

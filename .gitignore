@@ -12,3 +12,6 @@
 *.o
 *.a
 mkmf.log
+# Don't check in new rvm version and gemset files
+.ruby-gemset
+.ruby-version
