@@ -6,11 +6,11 @@ require 'cucumber/json_expanded/version'
 Gem::Specification.new do |spec|
   spec.name          = "cucumber-json_expanded"
   spec.version       = Cucumber::JsonExpanded::VERSION
-  spec.authors       = ["Lance Sanchez"]
-  spec.email         = ["lance.sanchez@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.authors       = ["Brandon Turner","Lance Sanchez"]
+  spec.email         = ["Brandon_Turner@rapid7.com", "lance_sanchez@rapid7.com"]
+  spec.summary       = %q{Fixing cucumber json format for scenario outlines}
+  spec.description   = %q{Creating this gem so we have consistent output from cucumber.}
+  spec.homepage      = "https://github.com/rapid7/cucumber-json_expanded"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency 'metasploit-version'
+  spec.add_development_dependency 'metasploit-version', '= 0.1.3.pre.changelog.pre.template'
   
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
