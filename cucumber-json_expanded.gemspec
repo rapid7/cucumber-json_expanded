@@ -18,12 +18,14 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency 'metasploit-version', '= 0.1.3.pre.changelog.pre.template'
-  
+  spec.add_dependency 'cucumber', '~> 1.3.14'
+
   spec.add_development_dependency "bundler", "~> 1.7"
+  spec.add_development_dependency 'metasploit-version', '= 0.1.3.pre.changelog.pre.template'
+  spec.add_development_dependency 'metasploit-yard', '~> 1.0'
   spec.add_development_dependency "rake", "~> 10.0"
   
   spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'cucumber', '~> 1.3.14'
   spec.add_development_dependency 'aruba'
+  spec.add_development_dependency 'pry'
 end
