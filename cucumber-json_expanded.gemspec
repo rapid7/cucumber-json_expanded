@@ -24,8 +24,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'metasploit-version', '= 0.1.3.pre.changelog.pre.template'
   spec.add_development_dependency 'metasploit-yard', '~> 1.0'
   spec.add_development_dependency "rake", "~> 10.0"
-  
+
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'aruba'
+  
+  spec.add_development_dependency 'diff_matcher'
   spec.add_development_dependency 'pry'
 end

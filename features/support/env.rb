@@ -3,6 +3,7 @@ require 'aruba/in_process'
 require 'aruba/spawn_process'
 require 'cucumber/cli/main'
 require 'cucumber/json_expanded'
+require 'diff_matcher/rspec_3'
 
 Before('@spawn') do
   Aruba.process = Aruba::SpawnProcess

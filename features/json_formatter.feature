@@ -295,6 +295,8 @@ Feature: JSON output formatter
     ]
 
     """
+  # this is a cucumber 2 feature we do not currently support
+  @wip
   Scenario: print from step definition
     When I run `cucumber --format Cucumber::JsonExpanded::Formatter features/print_from_step_definition.feature`
     Then it should pass with JSON:
@@ -353,6 +355,8 @@ Feature: JSON output formatter
     ]
 
     """
+  # this is a cucumber 2 feature we do not currently support
+  @wip
   Scenario: embedding data directly
     When I run `cucumber -b --format Cucumber::JsonExpanded::Formatter features/embed_data_directly.feature`
     Then it should pass with JSON:
@@ -510,7 +514,8 @@ Feature: JSON output formatter
                 "match": {
                 },
                 "result": {
-                  "status": "passed"
+                  "status": "passed",
+                  "duration": 1
                 }
               }
             ]
@@ -531,7 +536,8 @@ Feature: JSON output formatter
                 },
                 "result": {
                   "status": "failed",
-                  "error_message": " (RuntimeError)\n./features/step_definitions/steps.rb:6:in `/a failing step/'\nfeatures/outline.feature:4:in `Given a <type> step'"
+                  "error_message": " (RuntimeError)\n./features/step_definitions/steps.rb:6:in `/a failing step/'\nfeatures/outline.feature:4:in `Given a <type> step'",
+                  "duration": 1
                 }
               }
             ]
@@ -551,7 +557,8 @@ Feature: JSON output formatter
                 "match": {
                 },
                 "result": {
-                  "status": "passed"
+                  "status": "passed",
+                  "duration": 1
                 }
               }
             ]

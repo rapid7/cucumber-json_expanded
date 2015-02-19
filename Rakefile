@@ -10,7 +10,7 @@ RSpec::Core::RakeTask.new(:spec)
 task default: :spec
 
 Cucumber::Rake::Task.new do |t|
-  t.cucumber_opts = 'features --format pretty'
+  t.cucumber_opts = 'features --format pretty --tags ~@wip'
 end
 
 # Use find_all_by_name instead of find_by_name as find_all_by_name will return pre-release versions
